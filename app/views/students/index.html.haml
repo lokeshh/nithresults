@@ -9,6 +9,7 @@
       
   %tbody
     - @students.each do |s|
-      %td= s.rollno
-      %td= s.name
-      %td= s.cgpi
+      %tr
+        %td= s.rollno
+        %td= s.name
+        %td= s.cgpi
