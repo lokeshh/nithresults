@@ -1,0 +1,14 @@
+%h1 Students Results
+
+%table#students
+  %thead
+    %tr
+      %th Roll No.
+      %th Name
+      %th CGPI
+      
+  %tbody
+    - @students.each do |s|
+      %td= s.rollno
+      %td= s.name
+      %td= s.cgpi
