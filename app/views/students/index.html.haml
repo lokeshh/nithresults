@@ -3,9 +3,9 @@
 %table#students
   %thead
     %tr
-      %th Roll No.
-      %th Name
-      %th CGPI
+      %th= link_to 'Roll No.', root_path(:sort_by => :rollno)
+      %th= link_to 'Name', root_path(:sort_by => :name)
+      %th= link_to 'CGPI', root_path(:sort_by => :cgpi)
       
   %tbody
     - @students.each do |s|
